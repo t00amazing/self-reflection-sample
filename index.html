@@ -76,7 +76,7 @@ input[type=text],input[type=date],select,textarea{
 input:focus,select:focus,textarea:focus{border-color:var(--ring);box-shadow:0 0 0 2px rgba(24,24,27,.1);}
 input[readonly]{background:var(--muted);color:var(--muted-fg);}
 textarea{height:auto;min-height:82px;padding:8px 10px;resize:vertical;line-height:1.6;}
-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2371717a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px;cursor:pointer;}
+select{background-image:("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2371717a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px;cursor:pointer;}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 
 /* EFFORT */
@@ -641,7 +641,7 @@ hr.sep{border:none;border-top:1px solid var(--border);margin:14px 0;}
 // ─────────────────────────────────────────
 //  ★ 여기에 Apps Script 웹앱 URL을 붙여넣으세요
 // ─────────────────────────────────────────
-const API_URL = 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const API_URL = 'https://script.google.com/macros/s/AKfycbzAPef_2X8LNbA1XQMLymzBcjJTEIUQ3IEW5l89SAqZIWYYX5briQnZQu1mMXjIYTUc/exec';
 
 let lastResult = null;
 
